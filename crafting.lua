@@ -3,9 +3,9 @@
 minetest.register_craft({
 	output = 'abriglass:clear_glass 4', -- intentional lower yield
 	recipe = {
-		{'default:glass', '', 'default:glass' },
-		{'', 'default:glass', '' },
-		{'default:glass', '', 'default:glass' },
+		{'glass:glass', '', 'glass:glass' },
+		{'', 'glass:glass', '' },
+		{'glass:glass', '', 'glass:glass' },
 	}
 })
 
@@ -23,7 +23,7 @@ for i in ipairs(plain_colors) do
 	minetest.register_craft({
 		output = 'abriglass:'..nodesuffix..' 4',
 		recipe = {
-			{'abriglass:clear_glass', 'default:torch', 'abriglass:clear_glass' },
+			{'abriglass:clear_glass', 'torch:torch', 'abriglass:clear_glass' },
 			{'abriglass:clear_glass', 'dye:'..name, 'abriglass:clear_glass' },
 		}
 	})
@@ -161,9 +161,9 @@ for i in ipairs(port_recipes) do
 	minetest.register_craft({
 		output = "abriglass:porthole_"..name.." 4",
 		recipe = {
-			{"default:glass", "", "default:glass",},
-			{"default:"..name, "", "default:steel_ingot",},
-			{"default:glass", "", "default:glass",},
+			{"glass:glass", "", "glass:glass",},
+			{"default:"..name, "", "iron:ingot",},
+			{"glass:glass", "", "glass:glass",},
 		}
 	})
 end
@@ -171,9 +171,9 @@ end
 
 -- one-way recipes
 local oneway_recipe_list = {
-	{"abriglass:oneway_glass_desert_brick", "default:desert_stonebrick",},
-	{"abriglass:oneway_glass_stone_brick", "default:stonebrick",},
-	{"abriglass:oneway_glass_sandstone_brick", "default:sandstonebrick",},
+	{"abriglass:oneway_glass_desert_brick", "sand:desert_stone_brick",},
+	{"abriglass:oneway_glass_stone_brick", "stone:stonebrick",},
+	{"abriglass:oneway_glass_sandstone_brick", "sand:sandstonebrick",},
 	{"abriglass:oneway_glass_dark", "abriglass:oneway_wall_dark",},
 	{"abriglass:oneway_glass_pale", "abriglass:oneway_wall_pale",},
 }
@@ -185,7 +185,7 @@ for i in ipairs(oneway_recipe_list) do
 	minetest.register_craft({
 		output = name.." 2",
 		recipe = {
-			{'abriglass:clear_glass', 'default:mese_crystal_fragment', ingredient },
+			{'abriglass:clear_glass', 'mese:crystal_fragment', ingredient },
 		}
 	})
 end
@@ -193,18 +193,18 @@ end
 minetest.register_craft({
 	output = 'abriglass:oneway_wall_dark 2',
 	recipe = {
-		{'default:clay_lump', 'default:clay_lump', 'default:clay_lump'},
-		{'default:clay_lump', 'dye:black', 'default:clay_lump'},
-		{'default:clay_lump', 'default:clay_lump', 'default:clay_lump'},
+		{'clay:lump', 'clay:lump', 'clay:lump'},
+		{'clay:lump', 'dye:black', 'clay:lump'},
+		{'clay:lump', 'clay:lump', 'clay:lump'},
 	}
 })
 
 minetest.register_craft({
 	output = 'abriglass:oneway_wall_pale 2',
 	recipe = {
-		{'default:clay_lump', 'default:clay_lump', 'default:clay_lump'},
-		{'default:clay_lump', 'dye:white', 'default:clay_lump'},
-		{'default:clay_lump', 'default:clay_lump', 'default:clay_lump'},
+		{'clay:lump', 'clay:lump', 'clay:lump'},
+		{'clay:lump', 'dye:white', 'clay:lump'},
+		{'clay:lump', 'clay:lump', 'clay:lump'},
 	}
 })
 

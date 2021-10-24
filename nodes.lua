@@ -22,7 +22,7 @@ for i in ipairs(glass_list) do
 		light_source = 4,
 		drawtype = "glasslike",
 		paramtype = "light",
-		sounds = default.node_sound_glass_defaults(),
+		sounds = glass.sounds,
 	})
 end
 
@@ -36,7 +36,7 @@ minetest.register_node("abriglass:clear_glass", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	drawtype = "glasslike",
-	sounds = default.node_sound_glass_defaults(),
+	sounds = glass.sounds,
 })
 
 
@@ -62,7 +62,7 @@ for i in ipairs(light_list) do
 		light_source = 14,
 		drawtype = "glasslike",
 		paramtype = "light",
-		sounds = default.node_sound_glass_defaults(),
+		sounds = glass.sounds,
 	})
 end
 
@@ -93,7 +93,7 @@ for i in ipairs(pattern_list) do
 		drawtype = "glasslike",
 		paramtype = "light",
 		paramtype2 = "facedir",
-		sounds = default.node_sound_glass_defaults(),
+		sounds = glass.sounds,
 	})
 end
 
@@ -135,9 +135,9 @@ end
 local oneway_list = {
 	{"dark", "Dark", "oneway_face.png", "abriglass_oneway_wall.png",},
 	{"pale", "White", "oneway_face.png^[colorize:#F8F8FF:200", "abriglass_oneway_wall.png^[colorize:#E6E6FA:200",},
-	{"desert_brick", "Desert Brick", "oneway_face.png^[colorize:#814F3C:200", "default_desert_stone_brick.png",},
-	{"stone_brick", "Stone Brick", "oneway_face.png^[colorize:#615E5D:200", "default_stone_brick.png",},
-	{"sandstone_brick", "Sandstone Brick", "oneway_face.png^[colorize:#FFF9C5:200", "default_sandstone_brick.png",},
+	{"desert_brick", "Desert Brick", "oneway_face.png^[colorize:#814F3C:200", "sand_desert_stone_brick.png",},
+	{"stone_brick", "Stone Brick", "oneway_face.png^[colorize:#615E5D:200", "stone_brick.png",},
+	{"sandstone_brick", "Sandstone Brick", "oneway_face.png^[colorize:#FFF9C5:200", "sand_sandstone_brick.png",},
 }
 
 for i in ipairs(oneway_list) do
@@ -199,7 +199,7 @@ minetest.register_node("abriglass:ghost_crystal", {
 	light_source = 14,
 	drawtype = "glasslike",
 	paramtype = "light",
-	sounds = default.node_sound_glass_defaults(),
+	sounds = glass.sounds,
 })
 
 
