@@ -100,7 +100,7 @@ end
 
 -- portholes
 local port_list = {
-	{"wood",}, {"junglewood",},
+	{"apple_wood",}, {"jungle_wood",},
 }
 
 for i in ipairs(port_list) do
@@ -118,10 +118,10 @@ for i in ipairs(port_list) do
 			},
 		},
 		groups = {choppy = 2, flammable = 2, wood = 1},
-		tiles = {"default_"..name.. ".png", -- up
-				 "default_"..name.. ".png", -- down
-				 "default_"..name.. ".png", -- right
-				 "default_"..name.. ".png", -- left
+		tiles = {name.. ".png", -- up
+				 name.. ".png", -- down
+				 name.. ".png", -- right
+				 name.. ".png", -- left
 				 "abriglass_porthole_"..name..".png", -- back
 				 "abriglass_porthole_"..name..".png", -- front
 				 }, 
