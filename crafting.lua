@@ -173,7 +173,7 @@ end
 local oneway_recipe_list = {
 	{"abriglass:oneway_glass_desert_brick", "sand:desert_stone_brick",},
 	{"abriglass:oneway_glass_stone_brick", "stone:stonebrick",},
-	{"abriglass:oneway_glass_sandstone_brick", "sand:sandstonebrick",},
+	{"abriglass:oneway_glass_sandstone_brick", "sand:sandstone_brick",},
 	{"abriglass:oneway_glass_dark", "abriglass:oneway_wall_dark",},
 	{"abriglass:oneway_glass_pale", "abriglass:oneway_wall_pale",},
 }
